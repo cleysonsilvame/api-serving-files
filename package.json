@@ -1,0 +1,20 @@
+{
+  "name": "api-serving-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "fastify": "^4.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
