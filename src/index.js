@@ -4,10 +4,10 @@ const fastify = require("fastify")();
 const cors = require("@fastify/cors");
 
 fastify.get("/", async function (request, reply) {
-  const { file } = request.query;
+  const { file, name } = request.query;
 
   const filepath = path.resolve(file)
-  const filename = path.basename(filepath)
+  const filename = name ?? path.basename(filepath)
   const stats = fs.statSync(filepath);
   const fileSize = stats.size
   
