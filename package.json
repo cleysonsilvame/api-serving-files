@@ -4,17 +4,22 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node .",
-    "dev": "nodemon ."
+    "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@fastify/cors": "^8.2.1",
+    "@fastify/multipart": "^7.6.0",
     "fastify": "^4.14.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.21"
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^20.2.3",
+    "eslint": "^8.41.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
   }
 }
